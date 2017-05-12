@@ -33,7 +33,7 @@ xgboost_cv.py is where I train an xgboost algorithm and cross-validate it. Using
 
 ## Results
 
-I ran the analysis with and without including the variables of floor area and zip code. When I include those, the log loss is ~1.00 (which means it performs ~3.6 times better than chance) and the most important factor by far is floor area, which is surprising. In contrast, zip code surprisingly matters a lot less than proximity to certain types of businesses. Other surprises include the fact that proximity to historical and cultural resources is one of the least important factors. I've extracted the importance results, showing only the most and least important features.
+I ran the analysis with and without including the variables of floor area and zip code. When I include those, the log loss is ~1.00 (which means it performs ~3.6 times better than chance) and the most important factor by far is floor area, which is surprising. In contrast, zip code surprisingly matters a lot less than proximity to certain types of businesses. Other surprises include the fact that proximity to historical and cultural resources ("cult_count" below) is one of the least important factors. I've extracted the importance results, showing only the most and least important features. The most important features include independent artists, management and scientific consulting, legal services, automotive parts and accessories, and motion picture and video industries (excluding video rentals).
 
 ![Most important nearby features for predicting housing prices](5_most_imp_biz.png)
 
